@@ -5,48 +5,49 @@
 
 | Item | Description |
 |---|---|
-| Project Name | EnRoute |
-| Project Type | Software Engineering Graduation Project |
-| Application Type | Cross-platform mobile application |
-| Target Users | People who study, work, or learn new skills |
-| Planned Technologies | Flutter, Dart|
-| Backend / Database | Java, PostgerSQL |
+| **Project Name** | EnRoute |
+| **Project Type** | Software Engineering Graduation Project |
+| **Application Type** | Cross-platform Mobile Application |
+| **Target Users** | People who study, work, or learn new skills |
+| **Mobile Development** | Flutter, Dart |
+| **Backend Development** | Java |
+| **Database** | PostgreSQL |
+| **Version Control** | Git, GitHub |
 
 ## 2. Project Description
 
-EnRoute is a gamified productivity app that converts personal focus sessions into virtual adventures influenced by Istanbul's public transit system. It is intended for individuals who study, work, or acquire new skills and seek a more interactive method to structure concentrated tasks. Instead of showing a session just as a countdown timer, EnRoute illustrates it as a journey that includes a beginning, a path, noticeable advancement, and an endpoint.
+EnRoute is a productivity app that gamifies focus sessions, turning them into virtual adventures influenced by Istanbul’s public transit system. It is intended for individuals who study, work, or acquire new skills and seek a more engaging approach to organize their concentrated efforts.
 
-At the beginning of a session, users select a departure station and a destination on a virtual map inspired by Istanbul's metro, Metrobus, Marmaray, and ferry networks. The application uses the selected route to determine a planned focus duration. As time passes, the user's virtual journey progresses from one station to the next, making the passage of time visible through movement along the route. Completing a session allows users to earn virtual points and collect station-based rewards.
+Instead of showing a focus session as a countdown timer, EnRoute illustrates it as a journey featuring a starting point, a path, interim milestones, and an endpoint.
+Users choose a departure station and a destination from an online map influenced by Istanbul's metro, Metrobus, Marmaray, and ferry systems. The chosen path dictates the intended focus time. Throughout the session, the user's virtual experience moves forward from station to station, offering a visual depiction of time and advancement. Qualifying finished sessions grant virtual points and might reveal rewards.
 
-The application combines this journey-based interface with a reward system intended to encourage continued participation. Users can accumulate points, unlock virtual rewards, track completed journeys, and review basic session statistics. The transportation theme provides a consistent structure for these features: routes represent goals, stations represent milestones, and destinations represent completed focus sessions. The system does not require users to travel physically or connect to live transportation services.
+The application also intends to offer session history, fundamental statistics, and a rewards catalog. Upcoming additions might consist of collaborative focus paths, simulated peak hour scenarios, and extra obstacles. These attributes will be created based on project priorities, time constraints, and technical viability.
+EnRoute will utilize Flutter and Dart for the mobile app, Java for backend development, and PostgreSQL for data storage. The architecture will be improved throughout system design to determine how the mobile client, backend, and database interact.
 
-EnRoute is also intended to explore the social dimension of focused work. A planned feature will allow users to join shared focus journeys with friends or other participants and see their session progress. Optional challenges, such as simulated rush-hour events or sessions with additional completion conditions, may introduce variety and provide further incentives. These events will be simulated within the application rather than based on actual traffic or public transportation conditions.
-
-The project will initially prioritize a functional minimum viable product (MVP) containing route selection, focus-session management, journey visualization, rewards, and session history. Shared journeys and additional challenges will be implemented according to available time and technical feasibility. The application will be developed using Flutter and Dart, with version control managed through Git and GitHub. Backend and database technologies will be selected after evaluating the requirements for authentication, data persistence, and synchronization between users.
-
-The central purpose of EnRoute is to investigate whether representing focus sessions as interactive journeys can provide a more engaging experience than a conventional timer. Its effectiveness will not be assumed in advance. The completed application will be evaluated through functional testing and user feedback, with particular attention to usability, engagement, reliability, and the clarity of session progress.
+The primary objective is to provide a workable minimum viable product (MVP) and assess its usability, dependability, and perceived engagement. The question of whether the journey-based method provides a more captivating experience than a standard timer still requires investigation through testing and user feedback.
 
 ## 3. Introduction
 
-Digital devices provide convenient access to learning resources, communication tools, and work environments. However, the same devices can also expose users to notifications, entertainment, and frequent task switching. Maintaining a consistent focus routine can therefore be challenging for some users.
+Digital devices give people access to learning materials, communication tools and work environments.. They also bring constant notifications distractions from entertainment and frequent switching between tasks. This can make it hard for some people to stay focused over time.
 
-Many productivity applications provide timers, task lists, or blocking mechanisms to help users structure their work. Although these tools address important parts of the problem, their interfaces do not always provide a strong sense of progression or a rewarding experience throughout a session.
+Productivity apps often include features like timers to-do lists and tools to block distractions. These help users stay on track. A timer-based setup may not give the kind of engagement or sense of growth that some users really want.
 
-Gamification offers one possible approach to designing more engaging digital experiences. By incorporating goals, feedback, progress indicators, and rewards, applications can encourage users to interact with a system over time. However, the effectiveness of these elements depends on their design, context, and implementation.
+Gamification is a way to build engaging digital experiences by using goals, progress tracking, feedback and rewards. Its success depends a lot, on how it's used and the situation its applied to.
 
-EnRoute explores a specific application of this approach: representing focused work as a virtual journey through a familiar public transportation network. It combines session timing and progress visualization with a route-based interface and a system of virtual rewards. The project will investigate the feasibility of this concept and evaluate how users respond to the resulting experience.
+EnRoute tries out one use of this idea. It turns work into a virtual journey through a transportation network inspired by Istanbul. The app combines focus-time controls with a path that moves forward as users work. It also includes rewards to keep motivation high. The project will look at whether this concept works and how well people respond to the experience it offers.
+
 
 ## 4. Problem Statement
 
-Conventional focus timers can help users allocate time to a task, but they often represent a session primarily through elapsed time and a completion notification. For users who find this experience repetitive or insufficiently engaging, maintaining a consistent focus routine may remain difficult.
+Conventional focus timers provide a straightforward way to allocate time to a task, but they typically emphasize elapsed time and session completion. For users who find this experience repetitive or insufficiently engaging, maintaining a consistent focus routine may remain challenging.
 
-The problem addressed by EnRoute is therefore not the absence of timers, but the opportunity to explore a different way of presenting and experiencing a focus session.
+EnRoute addresses the opportunity to explore an alternative way of presenting a focus session through a visual, goal-oriented journey.
 
-The project investigates the following question:
+The project investigates the following research question:
 
 **Can a journey-based, gamified interface provide a more engaging and usable focus-session experience than a conventional timer interface?**
 
-This question will be explored through the implementation of a working mobile application and an initial evaluation with users. EnRoute will not claim to improve productivity unless the evaluation provides supporting evidence.
+This question will be explored through the implementation of a working mobile application and an initial user evaluation. EnRoute will not claim to improve productivity unless the evaluation provides supporting evidence.
 
 ## 5. Motivation and Objectives
 
@@ -79,18 +80,18 @@ The project aims to:
 |---|---|---|
 | FR-01 | User Profile | Users can access their profile and view their points, completed sessions, and collected rewards. |
 | FR-02 | Route Selection | Users can select a valid departure and destination from the predefined virtual transportation network. |
-| FR-03 | Session Configuration | Before starting, users can review the selected route and its planned focus duration. |
-| FR-04 | Focus Timer and Journey Progress | The timer tracks elapsed time and updates the virtual journey according to the session's progress. |
-| FR-05 | Session Control | Users can start, pause, resume, or cancel a session according to the defined session rules. |
-| FR-06 | Session Completion and Rewards | Eligible completed sessions generate the defined rewards once, without duplicate awards. |
+| FR-03 | Session Configuration | Users can review the selected route and planned focus duration before starting. |
+| FR-04 | Focus Timer and Journey Progress | The timer tracks elapsed time and updates the virtual journey according to session progress. |
+| FR-05 | Session Control | Users can start, pause, resume, or cancel a session according to defined session rules. |
+| FR-06 | Session Completion and Rewards | Eligible completed sessions generate rewards once, without duplicate awards. |
 | FR-07 | Reward Catalogue | Users can view available virtual rewards and unlock eligible rewards when they have sufficient points. |
-| FR-08 | Session History and Statistics | Users can review previous sessions, including their duration, route, and completion status. |
-| FR-09 | Shared Focus Journeys | If included in the MVP, users can join a shared journey and view other participants' session states. |
+| FR-08 | Session History and Statistics | Users can review previous sessions, including duration, route, and completion status. |
+| FR-09 | Shared Focus Journeys | If included, users can join a shared journey and view other participants' session states. |
 | FR-10 | Challenges | If included, the application supports predefined challenges with explicit completion conditions and reward rules. |
 
 ### 6.2 Non-Functional Requirements
 
-The following are initial engineering targets. They must be validated and refined during implementation and testing.
+The following are initial engineering targets to be validated and refined during implementation and testing.
 
 | ID | Requirement | Initial Acceptance Target |
 |---|---|---|
@@ -120,7 +121,7 @@ The first functional version will prioritize:
 - Persistent session history and basic statistics.
 - Essential testing and documentation.
 
-Authentication and cloud persistence will be implemented if required by the final architecture. Their exact implementation will depend on the backend and database selected during system design.
+Authentication and cloud persistence will be implemented according to the final system architecture and data requirements.
 
 ### 7.2 Features Dependent on Feasibility
 
@@ -130,7 +131,7 @@ The following features may be implemented after the core MVP:
 - Simulated rush-hour challenges.
 - Additional challenge types and reward conditions.
 - Expanded virtual vehicle customization.
-- Weekly competitions and more advanced social features.
+- Weekly competitions and additional social features.
 
 ### 7.3 Out of Scope
 
@@ -149,7 +150,8 @@ The initial project will not include:
 - The project must be completed within the graduation-project timeline.
 - Development capacity, testing resources, and participant availability are limited.
 - Flutter and Dart are the planned mobile development technologies.
-- Shared journeys may require a backend, database, authentication, and synchronization.
+- Java and PostgreSQL are the planned backend and database technologies.
+- Shared journeys may require authentication, synchronization, and additional backend functionality.
 - The initial transportation network will be predefined rather than dependent on live transit services.
 - Optional features must not compromise the implementation and testing of core functionality.
 
@@ -169,7 +171,7 @@ The project will follow an iterative development process. Each stage will produc
 
 | Phase | Main Activities | Expected Output |
 |---|---|---|
-| 1. Requirements and Research | Review relevant literature, define target users, refine requirements and scope. | Initial specification and research summary. |
+| 1. Requirements and Research | Review relevant literature, define target users, and refine requirements and scope. | Initial specification and research summary. |
 | 2. System Design | Design the application architecture, data model, user flows, and interface prototypes. | Architecture diagrams, data model, and UI designs. |
 | 3. Core Implementation | Build route selection, session timing, journey progression, and session-state handling. | Working core application. |
 | 4. Rewards and Persistence | Implement points, rewards, history, and the selected storage solution. | Persistent MVP features. |
@@ -179,20 +181,22 @@ The project will follow an iterative development process. Each stage will produc
 
 ### 9.1 Evaluation Approach
 
-The application will be evaluated in two distinct ways.
+The application will be evaluated in two ways.
 
-**Technical evaluation**
-- Verify that route selection and duration calculation behave as specified.
+**Technical Evaluation**
+
+- Verify route selection and duration calculation.
 - Test timer behavior during pause, resume, cancellation, and supported background operation.
 - Confirm that completed sessions and rewards are recorded correctly.
 - Test data persistence after application restarts.
 - Measure response times under documented test conditions.
 - Test synchronization and network interruption if shared journeys are implemented.
 
-**User evaluation**
+**User Evaluation**
+
 - Ask participants to complete representative tasks using the application.
 - Collect feedback on ease of use, clarity of progress, and the appeal of the journey metaphor.
-- Assess whether users understand how session duration, completion, and rewards work.
+- Assess whether users understand session duration, completion, and reward rules.
 - Identify usability issues and opportunities for improvement.
 
 Any claim that EnRoute improves engagement or productivity will be limited to the evidence collected. An initial user evaluation can reveal usability issues and perceived engagement, but it cannot by itself establish a general causal effect on productivity.
@@ -209,12 +213,14 @@ These studies provide background on gamification and learning-related outcomes. 
 
 ### 10.2 Technical References
 
-1. Flutter. *Flutter Documentation*. https://docs.flutter.dev/
-2. GitHub. *About Repositories*. https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories
+1. Flutter. [Flutter Documentation](https://docs.flutter.dev/)
+2. GitHub. [About Repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)
+3. Java. [Java Documentation](https://docs.oracle.com/en/java/)
+4. PostgreSQL. [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 
-## 11. Repository and Project Progress
+## 11. Use Case Diagram
 
-**GitHub Repository:** [Add the actual repository URL]
+The following diagram illustrates the main interactions between users and the EnRoute system.
 
-Development progress will be tracked through meaningful commits, with changes grouped by feature or task. The repository will contain the source code, README, and relevant project documentation.
+![EnRoute Use Case Diagram](photos/Usecasediagram.png)
 
