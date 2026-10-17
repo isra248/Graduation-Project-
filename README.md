@@ -222,5 +222,5 @@ These studies provide background on gamification and learning-related outcomes. 
 
 The following diagram illustrates the main interactions between users and the EnRoute system.
 
-![EnRoute Use Case Diagram](photos/Usecasediagram.png)
+![EnRoute Use Case Diagram](Photos/Usecasediagram.png)
 
