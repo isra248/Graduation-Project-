@@ -168,50 +168,6 @@ The main areas of evaluation will be ease of use, clarity of journey progress, a
 
 # EnRoute: Software Requirements Specification
 
-## 1. Functional Requirements
-
-Functional requirements describe the features and actions that the system must support.
-
-| ID | Requirement | Description |
-|---|---|---|
-| FR-01 | User Registration and Login | The system shall allow users to create an account and log in to access their personal data and progress. |
-| FR-02 | Focus Session Configuration | The system shall allow users to configure a focus session by selecting a starting station and a destination station on the virtual transportation map. |
-| FR-03 | Virtual Route Selection | The system shall display available virtual routes inspired by Istanbul's public transportation network, including metro, Metrobus, ferries, and Marmaray. |
-| FR-04 | Focus Timer | The system shall start and manage a focus timer based on the duration of the selected journey. |
-| FR-05 | Journey Progress Tracking | The system shall display the user's progress along the selected virtual route during an active focus session. |
-| FR-06 | Session Completion | The system shall detect when a focus session is completed and display an arrival message to the user. |
-| FR-07 | Reward System | The system shall award virtual Istanbulkart points to users after they successfully complete a focus session. |
-| FR-08 | Reward and Collectible Management | The system shall allow users to view their points balance and collected station stamps or rewards. |
-| FR-09 | Session History | The system shall record completed focus sessions and allow users to view their previous sessions and basic statistics. |
-| FR-10 | Shared Focus Journeys | The system shall allow users to create or join a shared focus journey with other users. |
-| FR-11 | Shared Journey Progress | The system shall display participants' progress during a shared journey. |
-| FR-12 | User Profile | The system shall allow users to view their basic profile information, accumulated points, and progress. |
-
----
-
-## 2. Non-Functional Requirements
-
-Non-functional requirements describe the expected quality, performance, security, and usability of the system.
-
-| ID | Requirement | Description |
-|---|---|---|
-| NFR-01 | Usability | The application shall provide a clear and understandable interface that allows users to start a focus session without unnecessary steps. |
-| NFR-02 | Performance | The application shall respond to normal user interactions within an acceptable time under typical operating conditions. |
-| NFR-03 | Reliability | The application shall maintain accurate focus-session timing and prevent completed sessions from being recorded more than once. |
-| NFR-04 | Data Persistence | The application shall preserve user information, session history, and reward balances when the application is closed and reopened. |
-| NFR-05 | Security | The system shall protect user account information and prevent unauthorized access to personal data. |
-| NFR-06 | Privacy | The application shall collect only the personal information necessary for its core functionality and shall not expose private user information to other users. |
-| NFR-07 | Compatibility | The mobile application shall support the target Android and/or iOS versions selected for the project. |
-| NFR-08 | Maintainability | The application shall use a modular code structure to make it easier to test, debug, and extend features in future versions. |
-| NFR-09 | Scalability | The system architecture should allow additional users and features to be supported without requiring a complete redesign. |
-| NFR-10 | Accessibility | The interface shall use readable text, clear visual indicators, and sufficiently distinguishable interface elements. |
-| NFR-11 | Network Handling | The application shall handle network interruptions during shared journeys and provide clear feedback when online features are unavailable. |
-| NFR-12 | Resource Efficiency | The application shall avoid unnecessary background processing and excessive battery or memory consumption during focus sessions. |
-
----
-
-## 3. Initial Scope Limitations
-
 
 ## Functional Requirements
 
